@@ -1,48 +1,55 @@
+public class Main {
+    public static void main(String[] args) {
+
+// Task 1 
+
+int[] arrayNumbers = {  7, 12, -4,  5,  6, 14,  8};
+int largestNumber =arrayNumbers[0];
+int smallestNumber =arrayNumbers[0];
+
+
+for (int i = 1; i < arrayNumbers.length; i++) {
+ if (arrayNumbers[i] > largestNumber) {
+     largestNumber = arrayNumbers[i];
+       ;
+    }
+ if (arrayNumbers[i] < smallestNumber) {
+     largestNumber = arrayNumbers[i];
+
+    }
+}
+
+System.out.println("largest Number: " + largestNumber);
+System.out.println("smallest Number is: " + smallestNumber);
+
+double difference = largestNumber - smallestNumber ;
+System.out.println("the difference is " + difference);
+
+
+
+
+
+
+
+// TASK 2
+
+int[] arrayNumbers = {  7, 12, -4,  5,  6, 14,  8};
+int smallest = Integer.MAX_VALUE;
+int secondSmallest  =Integer.MAX_VALUE;
+
+
+for (int number : arrayNumbers  ) {
+    if (number  < smallest ) {
+   secondSmallest  = smallest ;
+   smallest = number ;
+    } else if (number < secondSmallest && number != smallest ){
+    secondSmallest = number;
+    }
+
+}
+System.out.println("smalest value " + smallest) ;
+System.out.println(" second smallest value  " + secondSmallest);
+
+
 
 // Task 3 
-public class Main {
-public static void main(String[] args) {
-        int x = 3;
-        int y = 4;
-        double result = calculate(x, y);
-        System.out.println("Result is : " + result); }
-
-    private static double calculate(int x, int y) {
-        
-    }
-}
-
-
-
-
-// Task 
-
-public class Main {
-public static void main(String[] args) {
-        int[] numbers = {5, 3, 9, 1, 4}; 
-        int difference = findDifference(numbers);
-        System.out.println("The difference is: " + difference); }
-
-public static int findDifference(int[] numbers) {
-    int largest = Integer.MIN_VALUE; 
-        int smallest = Integer.MAX_VALUE; 
-        for (int number : numbers) {
-            if (number > largest) {
-                largest = number; }
-            if (number < smallest) {
-                smallest = number; }
-        }
-        
-        return largest - smallest; 
-    }
-}
-
-// console
-
-C:\Users\demea\.jdks\openjdk-22.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.2\lib\idea_rt.jar=54239:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\demea\IdeaProjects\Hello java\out\production\Hello java" Main
-The difference is: 8
-
-Process finished with exit code 0
-
-
-

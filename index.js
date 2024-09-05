@@ -50,7 +50,7 @@ public static void task1() {
                 ;
             }
             if (arrayNumbers[i] < smallestNumber) {
-                largestNumber = arrayNumbers[i];
+                smallestNumber = arrayNumbers[i];
 
             }
         }
@@ -103,7 +103,7 @@ public static void task2() {
         return result;
 
 
-        
+
     }
 
 }
